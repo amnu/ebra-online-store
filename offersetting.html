@@ -1,0 +1,46 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+ 	<form method="post">
+        {% csrf_token %}
+
+ 		<h1 align="center">SET OFFER</h1>
+ 		<table align="center">
+ 			<tr>
+ 				<td><b>Title</td>
+ 				<td>
+ 					<input type="text" name="Title" placeholder="Enter offer title" required="">
+
+ 				</td><td></td>
+                         <td> Image</td>
+ 				<td>
+ 					<input type="file" name="filename">
+ 					<img src="#">
+ 				</td>
+
+ 			</tr>
+ 			<tr>
+ 				<td><b>Description</b></td>
+ 				<td>
+ 					<input type="text" name="Description" placeholder="Set the offer" required="">
+
+ 				</td>
+
+ 			</tr>
+
+            	<tr>
+ 				<td><b>Date</b></td>
+ 				<td>
+ 					<input type="date" name="Date" placeholder="Date" required="">
+
+ 				</td>
+
+ 			</tr>
+
+
+ 			<tr>
+ 				<td></td>
+ 				<td><input type="submit" name="OK" value="OK"></td>
+ 			</tr>
+ 		</table>
+ 	</form>
+{% endblock %}
