@@ -1,0 +1,93 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+<form method="post">
+    {% csrf_token %}
+	<h1 align="center">REGISTRATION FORM</h1>
+	<table align="center">
+		<tr>
+			<td>Name</td><td></td>
+			<td><input type="text" name="Name"placeholder="Enter your name"required>
+			</td>
+            <td></td>
+                         <td> Image</td>
+ 				<td>
+ 					<input type="file" name="filename">
+ 					<img src="#">
+ 				</td>
+
+
+
+		</tr>
+         <tr>
+			<td>Age</td><td></td>
+			<td><input type="number" name="Age"placeholder="Enter your age"required>
+			</td>
+		</tr>
+
+ <tr>
+			<td>Address</td><td></td>
+			<td><input type="text" name="Address"placeholder="Enter your Location"required>
+			</td>
+		</tr>
+		<tr>
+			<td>Experience</td><td></td>
+			<td><input type="text" name="Experience"placeholder="Enter your Experience"required>
+			</td>
+		</tr>
+
+ <tr>
+			<td>Gender</td><td></td>
+			<td><input type="radio" name="Gender"value="Male">Male
+				<td><input type="radio" name="Gender"value="Female">Female
+			</td>
+		</tr>
+
+ <tr>
+			<td>Phone</td><td></td>
+			<td><input type="text" name="Phone"placeholder="Enter your Phone"required>
+			</td>
+		</tr>
+
+
+
+
+
+
+ <tr>
+			<td>Email</td><td></td>
+			<td><input type="text" name="Email"placeholder="Enter your Email"required>
+			</td>
+		</tr>
+
+ <tr>
+			<td>Password</td><td></td>
+			<td><input type="password" name="Password"placeholder="Enter your Password"required>
+			</td>
+		</tr>
+
+
+		 <tr>
+			<td>Conform Password</td><td></td>
+			<td><input type="password" name="Conform Password"placeholder="Enter your Conform Password"required>
+			</td>
+		</tr>
+	 <tr>
+			<td>Date</td><td></td>
+			<td><input type="date" name="Date"placeholder="date"required>
+			</td>
+		</tr>
+
+
+<tr></tr>
+	<tr>
+ 				<td></td>
+ 				<td><input type="submit" name=""log" value="REGISTER"></td>
+ 				<td><input type="submit" name=""log" value="CANCEL"></td>
+ 			</tr>
+
+
+
+
+	</table>
+</form>
+{% endblock %}
