@@ -1,0 +1,37 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+ 	<form method="post">
+        {% csrf_token %}
+
+ 		<h1 align="center">Send Notification</h1>
+
+ 		<table align="center"width="379" height="209">
+ 			<tr>
+ 				<td><b><strong>Title</strong></td>
+ 				<td>
+ 					<input type="text" name="Title" placeholder="Enter offer title" required="">
+
+ 				</td><td></td>
+ 			<tr>
+ 				<td><strong>Description</strong></td>
+ 				<td>
+ 					<input type="text" name="Description" placeholder="Set the offer" required="">
+
+ 				</td>
+
+ 			</tr>
+ 			<tr>
+ 				<td><b>Date</b></td>
+ 				<td>
+ 					<input type="Date" name="Date" placeholder="Date" required="">
+
+ 				</td>
+
+ 			</tr>
+ 			<tr>
+ 				<td></td>
+ 				<td><input type="submit"  name="OK" value="OK"></td>
+ 			</tr>
+ 		</table>
+ 	</form>
+{% endblock %}
