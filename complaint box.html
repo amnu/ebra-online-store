@@ -1,0 +1,32 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+ 	<form method="post">
+        {% csrf_token %}
+
+
+ 		<h1 align="center">Complaint Box</h1>
+ 		<table align="center"width="379" height="209">
+ 			<tr>
+ 				<td><b>Complaint</td>
+ 				<td>
+ 					<input type="text" name="Complaint" placeholder="Enter your Complaint" required=""height="10pt">
+
+ 				</td><td></td>
+
+
+
+            	<tr>
+ 				<td><b>Date</b></td>
+ 				<td>
+ 					<input type="date" name="Date" placeholder="Date" required="">
+
+ 				</td>
+
+ 			</tr>
+            <tr></tr>
+            <tr>
+ 				<td><input type="submit" name="OK" value="OK"></td>
+ 			</tr>
+ 		</table>
+ 	</form>
+{% endblock %}
