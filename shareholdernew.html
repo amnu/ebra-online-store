@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center">
+    <tr>
+        <td>Name</td>
+        <td>Invest amount</td>
+         <td>Profit</td>
+         <td>Loss</td>
+         <td>Contact number</td>
+
+        <td>Date</td>
+
+    </tr>
+    {% if objval %}
+    {% for ob in objval %}
+    <tr>
+        <td>{{ ob.name}}</td>
+         <td>{{ ob.invest amount}}</td>
+       <td>{{ ob.profit}}</td>
+       <td>{{ ob.loss}}</td>
+       <td>{{ ob.contact number}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+   {% endif %}
+
+
+
+</table>
+
+</body>
+</html>

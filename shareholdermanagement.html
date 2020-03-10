@@ -1,0 +1,63 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+ 	<form method="post">
+   {% csrf_token %}
+ 		<h1 align="center">SHAREHOLDERS DETAILS </h1>
+ 		<table align="center">
+ 			<tr>
+ 				<td><b>NAME</td>
+ 				<td>
+ 					<input type="text" name="Name" placeholder="Enter " required=""height="10pt">
+
+ 				</td><td></td>
+ 			<tr>
+ 				<td><b>INVEST AMOUNT</b></td>
+ 				<td>
+ 					<input type="number" name="Invest Amount " placeholder="Invest Amount" required="">
+
+ 				</td>
+
+ 			</tr>
+
+           <tr>
+ 				<td><b>PROFIT</b></td>
+ 				<td>
+ 					<input type="number" name="Profit" placeholder="Profit" required="">
+
+ 				</td>
+
+ 			</tr>
+              <tr>
+ 				<td><b>LOSS</b></td>
+ 				<td>
+ 					<input type="number" name="Loss" placeholder="Loss" required="">
+
+ 				</td>
+
+ 			</tr>
+
+
+                 <tr>
+ 				<td><b>Contact</b></td>
+ 				<td>
+ 					<input type="number" name="Contact number" placeholder="number" required="">
+
+ 				</td>
+
+ 			</tr>
+                    <tr>
+ 				<td><b>Date</b></td>
+ 				<td>
+ 					<input type="date" name="Date" placeholder="Date" required="">
+
+ 				</td>
+
+ 			</tr>
+
+ 				<tr>
+ 				<td></td>
+ 				<td><input type="submit" name="SUBMIT" value="SUBMIT"></td>
+ 			</tr>
+ 		</table>
+ 	</form>
+{% endblock %}
