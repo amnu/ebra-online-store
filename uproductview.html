@@ -1,0 +1,28 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+<table align="center" border="1" width="700" >
+    <tr bgcolor="#cd5c5c">
+        <td>Name</td>
+         <td>Price</td>
+        <td>Categories</td>
+        <td>Quantity</td>
+        <td>Description</td>
+        <td>Date</td>
+    </tr>
+    {% if objval %}
+    {% for ob in objval %}
+    <tr>
+        <td>{{ ob.name }}</td>
+       <td>{{ ob.price }}</td>
+       <td>{{ ob.category }}</td>
+       <td>{{ ob.quantity }}</td>
+       <td>{{ ob.description}}</td>
+       <td>{{ ob.date}}</td>
+    </tr>
+    {% endfor %}
+   {% endif %}
+
+
+
+</table>
+{% endblock %}
