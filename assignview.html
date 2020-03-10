@@ -1,0 +1,25 @@
+{% extends 'temp/temp.html' %}
+{% block base %}
+<table align="center" border="1">
+    <tr>
+        <td>Deliveryboy Name</td>
+         <td>Work Details</td>
+        <td>User details</td>
+        <td>Date</td>
+    </tr>
+    {% if objval %}
+    {% for ob in objval %}
+    <tr>
+        <td>{{ ob.delieveryboyname }}</td>
+       <td>{{ ob.workdetails }}</td>
+       <td>{{ ob.userdetails}}</td>
+        <td>{{ ob.date}}</td>
+    </tr>
+    {% endfor %}
+   {% endif %}
+
+
+
+</table>
+{##}
+{#{% endblock %}#}
