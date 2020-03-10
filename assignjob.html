@@ -1,0 +1,56 @@
+{% extends 'temp/contact.html' %}
+{% block admin %}
+<form method="post">
+    {% csrf_token %}
+	<h1 align="center">&nbsp;</h1>
+	<h1 align="center">&nbsp;</h1>
+	<h1 align="center">FORM</h1>
+	  <table width="496" height="324" align="center">
+		<tr>
+			<td width="130"><strong>DELIVERY-BOY NAME</strong></td>
+			<td width="74"></td>
+			<td width="158"><input type="text" name="Name"placeholder="Enter name"required>
+		  </td>
+		</tr>
+   	<tr>
+			<td width="130"><strong>WORK DETAILS</strong></td>
+			<td width="74"></td>
+			<td width="158"><input type="text" name="Work details"placeholder="Enter work details"required>
+		  </td>
+		</tr>
+ <tr>
+			<td><strong>USER DETAILS</strong></td>
+			<td></td>
+			<td><input type="text" name="User details"placeholder="Enter user details"required>
+			</td>
+	  </tr>
+
+
+
+ <tr>
+			<td><strong>PHONE</strong></td>
+			<td></td>
+			<td><input type="text" name="Phone"placeholder="Enter your Phone"required>
+			</td>
+	  </tr>
+
+           <tr>
+			<td><strong>DATE</strong></td>
+			<td></td>
+			<td><input type="date" name="Date"placeholder="Date"required>
+			</td>
+	  </tr>
+
+
+<tr></tr>
+	<tr>
+ 				<td></td>
+ 				<td><input type="submit" name=""log" value="ASSIGN"></td>
+ 				<td><input type="submit" name=""log" value="CANCEL"></td>
+	  </tr>
+
+
+    </table>
+ 	</form>
+
+{% endblock %}
